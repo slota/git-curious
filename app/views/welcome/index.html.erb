@@ -1,7 +1,30 @@
-<h1>Welcome!</h1>
-<% if current_user %>
-  <%= "Welcome #{current_user.name}" %>
-  <%= link_to "Logout", "/logout", method: :delete %>
-<% else %>
-  <%= link_to "Login", "/auth/github" %>
-<% end %>
+<div class="container-fluid container-home">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1 class="home">Welcome!</h1>
+    <% if current_user %>
+    <h1 class="home">You Are Authorized</h1>
+    <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
+    <h2 class="home"> <%= current_user.nickname %> </h2>
+    <h2 class="home"> <%= current_user.email %> </h2>
+    <h1 class="home">Starred Repos: <%= @starred_repos.starred_repo_names.count %></h1>
+    <h1 class="home">Followers: <%= @followers.names.count %></h1>
+    <h1 class="home">Following: <%= @following.names.count %></h1>
+    <h1 class="home">Following: <%= @following.names.count %></h1>
+    <h1 class="home">Total Contributions: <%= @doc.total_contributions %></h1>
+    <h1 class="home">Longest Streak: <%= @doc.longest_streak %></h1>
+    <h1 class="home">Current Streak: <%= @doc.current_streak %></h1>
+    <h1 class="home">Repos: <% @starred_repos.names.each do  |name|  %></h1>
+    <h1 class="home">
+      <ul>
+        <li> <%= link_to name, comments_path(name)%></li>
+      </ul>
+    </h1>
+      <% end %>
+    <%= link_to "Logout", "/logout", method: 'delete', class: "btn btn-lg btn-default btn-home" %>
+    <% else %>
+    <%= link_to "Login", "/auth/github", class: "btn btn-lg btn-default btn-home" %>
+    <% end %>
+    <div class="col-md-2"></div>
+  </div>
+</div>
