@@ -6,6 +6,7 @@ class WelcomeController < ApplicationController
       @following     = Following.new(current_service)
       @doc           = Summary.new(current_user)
       @organizations = Organization.new(current_service)
+      @events        = Event.new(current_service)
     end
   end
 end

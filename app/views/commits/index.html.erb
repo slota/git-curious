@@ -1,0 +1,11 @@
+<div class="container-fluid container-home">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1 class="home">Comments from recent repo commits</h1>
+    <h3 class="home">
+      <% @commits.comments.each do |commit| %>
+        <br><%= commit %>
+      <% end %>
+    </h3>
+  </div>
+</div>

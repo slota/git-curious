@@ -36,9 +36,12 @@ class GitHubService
     JSON.parse(connection.get("/user/memberships/orgs", {access_token: current_user.token}).body)
   end
 
-  def comments(repo)
-    binding.pry
-    JSON.parse(connection.get("/repos/#{current_user.nickname}/#{repo}/comments", {access_token: current_user.token}).body)
+  def commits(repo)
+    JSON.parse(connection.get("/repos/#{current_user.nickname}/#{repo}/commits", {access_token: current_user.token}).body)
+  end
+
+  def events
+    JSON.parse(connection.get("/users/#{current_user.nickname}/received_events", {access_token: current_user.token}).body)
   end
 
   private

@@ -4,6 +4,10 @@
     <h1 class="home">Welcome!</h1>
     <% if current_user %>
     <h1 class="home">You Are Authorized</h1>
+    <h3 class="home">Recent Activity</h3>
+    <% @events.story.each do |event| %>
+      <h3 class="home"> <%= event %> </h3>
+    <% end %>
     <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
     <h2 class="home"> <%= current_user.nickname %> </h2>
     <h2 class="home"> <%= current_user.email %> </h2>
@@ -17,7 +21,7 @@
     <h1 class="home">Repos: <% @starred_repos.names.each do  |name|  %></h1>
     <h1 class="home">
       <ul>
-        <li> <%= link_to name, comments_path(name)%></li>
+        <li> <%= link_to name, commits_path(name)%></li>
       </ul>
     </h1>
       <% end %>
