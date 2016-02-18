@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/slotaj/git-curious/commits?access_token=31dc51f0df9eba1e8d589b63873fd5b9c6c7d92a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 18 Feb 2016 20:29:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4935'
+      X-Ratelimit-Reset:
+      - '1455830053'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Last-Modified:
+      - Thu, 18 Feb 2016 03:59:22 GMT
+      Etag:
+      - W/"1c66960934200234651f57f49108e047"
+      X-Oauth-Scopes:
+      - ''
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 64aeece7d4315d632c39
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 76d9828c7e4f1d910f7ba069e90ce976
+      X-Github-Request-Id:
+      - 4B947AFE:16020:11BC704E:56C629B9
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"sha":"db832fc9fde25e2989218abeb88e0e1be9689ec4","commit":{"author":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-18T03:59:22Z"},"committer":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-18T03:59:22Z"},"message":"user
+        stories are now availale","tree":{"sha":"7cf31f872795719b23ec0ecdfc5d3e59ca5ef5aa","url":"https://api.github.com/repos/slotaj/git-curious/git/trees/7cf31f872795719b23ec0ecdfc5d3e59ca5ef5aa"},"url":"https://api.github.com/repos/slotaj/git-curious/git/commits/db832fc9fde25e2989218abeb88e0e1be9689ec4","comment_count":0},"url":"https://api.github.com/repos/slotaj/git-curious/commits/db832fc9fde25e2989218abeb88e0e1be9689ec4","html_url":"https://github.com/slotaj/git-curious/commit/db832fc9fde25e2989218abeb88e0e1be9689ec4","comments_url":"https://api.github.com/repos/slotaj/git-curious/commits/db832fc9fde25e2989218abeb88e0e1be9689ec4/comments","author":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"committer":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"parents":[{"sha":"262c829cd3adf0443dd86b74a6c68db6f1e1f8b4","url":"https://api.github.com/repos/slotaj/git-curious/commits/262c829cd3adf0443dd86b74a6c68db6f1e1f8b4","html_url":"https://github.com/slotaj/git-curious/commit/262c829cd3adf0443dd86b74a6c68db6f1e1f8b4"}]},{"sha":"262c829cd3adf0443dd86b74a6c68db6f1e1f8b4","commit":{"author":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-18T03:15:37Z"},"committer":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-18T03:15:37Z"},"message":"working
+        on getting comments displayed for repos","tree":{"sha":"ad2ac679758fb5e8c42d23c82a0d5ff341cfc23e","url":"https://api.github.com/repos/slotaj/git-curious/git/trees/ad2ac679758fb5e8c42d23c82a0d5ff341cfc23e"},"url":"https://api.github.com/repos/slotaj/git-curious/git/commits/262c829cd3adf0443dd86b74a6c68db6f1e1f8b4","comment_count":0},"url":"https://api.github.com/repos/slotaj/git-curious/commits/262c829cd3adf0443dd86b74a6c68db6f1e1f8b4","html_url":"https://github.com/slotaj/git-curious/commit/262c829cd3adf0443dd86b74a6c68db6f1e1f8b4","comments_url":"https://api.github.com/repos/slotaj/git-curious/commits/262c829cd3adf0443dd86b74a6c68db6f1e1f8b4/comments","author":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"committer":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"parents":[{"sha":"aad0355cdbef68a795fe3f9251439644ab874e0f","url":"https://api.github.com/repos/slotaj/git-curious/commits/aad0355cdbef68a795fe3f9251439644ab874e0f","html_url":"https://github.com/slotaj/git-curious/commit/aad0355cdbef68a795fe3f9251439644ab874e0f"}]},{"sha":"aad0355cdbef68a795fe3f9251439644ab874e0f","commit":{"author":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-17T03:08:47Z"},"committer":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-17T03:08:47Z"},"message":"log
+        in and log out capabilities","tree":{"sha":"88f908c2d5d4deb373c1d2981eb1d98324aff2b5","url":"https://api.github.com/repos/slotaj/git-curious/git/trees/88f908c2d5d4deb373c1d2981eb1d98324aff2b5"},"url":"https://api.github.com/repos/slotaj/git-curious/git/commits/aad0355cdbef68a795fe3f9251439644ab874e0f","comment_count":0},"url":"https://api.github.com/repos/slotaj/git-curious/commits/aad0355cdbef68a795fe3f9251439644ab874e0f","html_url":"https://github.com/slotaj/git-curious/commit/aad0355cdbef68a795fe3f9251439644ab874e0f","comments_url":"https://api.github.com/repos/slotaj/git-curious/commits/aad0355cdbef68a795fe3f9251439644ab874e0f/comments","author":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"committer":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"parents":[{"sha":"74001c1f5327ae14d40c16a66b041a51832e5d6c","url":"https://api.github.com/repos/slotaj/git-curious/commits/74001c1f5327ae14d40c16a66b041a51832e5d6c","html_url":"https://github.com/slotaj/git-curious/commit/74001c1f5327ae14d40c16a66b041a51832e5d6c"}]},{"sha":"74001c1f5327ae14d40c16a66b041a51832e5d6c","commit":{"author":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-17T02:41:46Z"},"committer":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-17T02:41:46Z"},"message":"log
+        in and log out capabilities","tree":{"sha":"529a18765c425261f36c9be19650337667ffbe28","url":"https://api.github.com/repos/slotaj/git-curious/git/trees/529a18765c425261f36c9be19650337667ffbe28"},"url":"https://api.github.com/repos/slotaj/git-curious/git/commits/74001c1f5327ae14d40c16a66b041a51832e5d6c","comment_count":0},"url":"https://api.github.com/repos/slotaj/git-curious/commits/74001c1f5327ae14d40c16a66b041a51832e5d6c","html_url":"https://github.com/slotaj/git-curious/commit/74001c1f5327ae14d40c16a66b041a51832e5d6c","comments_url":"https://api.github.com/repos/slotaj/git-curious/commits/74001c1f5327ae14d40c16a66b041a51832e5d6c/comments","author":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"committer":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"parents":[{"sha":"9d3e8ee0500732b78ecb25a4002247a65d61a439","url":"https://api.github.com/repos/slotaj/git-curious/commits/9d3e8ee0500732b78ecb25a4002247a65d61a439","html_url":"https://github.com/slotaj/git-curious/commit/9d3e8ee0500732b78ecb25a4002247a65d61a439"}]},{"sha":"9d3e8ee0500732b78ecb25a4002247a65d61a439","commit":{"author":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-17T01:12:50Z"},"committer":{"name":"John
+        Slota","email":"john.slota@gmail.com","date":"2016-02-17T01:12:50Z"},"message":"first
+        commit","tree":{"sha":"5fa7846f79ff69739df7a7c55ef0d973af60040c","url":"https://api.github.com/repos/slotaj/git-curious/git/trees/5fa7846f79ff69739df7a7c55ef0d973af60040c"},"url":"https://api.github.com/repos/slotaj/git-curious/git/commits/9d3e8ee0500732b78ecb25a4002247a65d61a439","comment_count":0},"url":"https://api.github.com/repos/slotaj/git-curious/commits/9d3e8ee0500732b78ecb25a4002247a65d61a439","html_url":"https://github.com/slotaj/git-curious/commit/9d3e8ee0500732b78ecb25a4002247a65d61a439","comments_url":"https://api.github.com/repos/slotaj/git-curious/commits/9d3e8ee0500732b78ecb25a4002247a65d61a439/comments","author":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"committer":{"login":"slotaj","id":12905774,"avatar_url":"https://avatars.githubusercontent.com/u/12905774?v=3","gravatar_id":"","url":"https://api.github.com/users/slotaj","html_url":"https://github.com/slotaj","followers_url":"https://api.github.com/users/slotaj/followers","following_url":"https://api.github.com/users/slotaj/following{/other_user}","gists_url":"https://api.github.com/users/slotaj/gists{/gist_id}","starred_url":"https://api.github.com/users/slotaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/slotaj/subscriptions","organizations_url":"https://api.github.com/users/slotaj/orgs","repos_url":"https://api.github.com/users/slotaj/repos","events_url":"https://api.github.com/users/slotaj/events{/privacy}","received_events_url":"https://api.github.com/users/slotaj/received_events","type":"User","site_admin":false},"parents":[]}]'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 20:29:46 GMT
+recorded_with: VCR 3.0.1

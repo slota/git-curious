@@ -15,10 +15,19 @@ gem 'figaro'
 gem 'faraday'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
+gem 'capybara-rails'
+gem 'simplecov', :require => false, :group => :test
+gem 'launchy'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+end
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+  gem 'minitest-vcr'
+  gem 'minitest-rails'
 end
 
 group :development do

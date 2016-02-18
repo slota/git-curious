@@ -3,7 +3,7 @@ require 'open-uri'
 
 class NokogiriService
   attr_reader :doc
-  def initialize(current_user)
-    @doc = Nokogiri::HTML(open("https://github.com/#{current_user.nickname}"))
+  def initialize(nickname)
+    @doc = Nokogiri::HTML(open("https://github.com/#{nickname}"))
   end
 end

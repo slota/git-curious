@@ -7,20 +7,11 @@ class GitHubService
     # connection.headers['access_token'] = current_user.token
   end
 
-  def user(current_user)
-    parse(connection.get("/users/#{current_user.nickname}"))
-  end
-
   def repos
     JSON.parse(connection.get("/user/repos", {access_token: current_user.token}).body)
   end
 
-  def all_repos(user)
-    parse(connection.get("/users/#{user}/repos?type=owner"))
-  end
-
   def starred_repos
-    # JSON.parse(Faraday.new(url: "https://api.github.com").get("/user/starred", {access_token: current_user.token}).body)
     JSON.parse(connection.get("/user/starred", {access_token: current_user.token}).body)
   end
 
@@ -33,7 +24,7 @@ class GitHubService
   end
 
   def organizations
-    JSON.parse(connection.get("/user/memberships/orgs", {access_token: current_user.token}).body)
+    JSON.parse(connection.get("/users/slotaj/orgs", {access_token: current_user.token}).body)
   end
 
   def commits(repo)
