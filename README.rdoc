@@ -3,23 +3,37 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+Hola my name is john and this is a basic github functionality api,
+if you have questions/comments/concerns shoot me an email at john.slota@gmail.com
+Basically you can add currently a github nickname on the front and it'll put them on a scoreboard,
+there is no user functionality to remove them and it does not update,
+these are easy fixes which I'll probably get around to,
+
+Seriously have fun, and please contribute if you'd like or hit me up if you'd like some help in learning.
+
+Peace!
+
 Things you may want to cover:
 
 * Ruby version is not important
 
-* System dependencies
+* System dependencies not important
 
-* Configuration
+* Configuration?
 
-* Database creation
+* Database creation - We are using postresql
 
-* Database initialization
+* Database initialization - rake db:migrate in the terminal
 
-* How to run the test suite
+* How to run the test suite - rake
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment instructions - Do this: git clone "url"
+then bundle
+then run rails s
+then open up http://localhost:3000/
+it should be on your machine locally and code away!!
 
 * ...
 
