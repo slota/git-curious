@@ -8,24 +8,23 @@
     <h2 class="home"> <%= current_user.email %> </h2>
     <h1 class="home">You Are Authorized</h1>
     <h3 class="home">Recent Activity</h3>
-    <% @events.story.each do |event| %>
+    <% @info.events.story.each do |event| %>
       <h3 class="home"> <%= event %> </h3>
     <% end %>
-    <h1 class="home">Starred Repos: <%= @starred_repos.starred_repo_names.count %></h1>
-    <h1 class="home">Followers: <%= @followers.names.count %></h1>
-    <h1 class="home">Following: <%= @following.names.count %></h1>
-    <h1 class="home">Following: <%= @following.names.count %></h1>
-    <h1 class="home">Total Contributions: <%= @doc.total_contributions %></h1>
-    <h1 class="home">Longest Streak: <%= @doc.longest_streak %></h1>
-    <h1 class="home">Current Streak: <%= @doc.current_streak %></h1>
-    <h1 class="home">Your Organizations: <% @organizations.names.each do |organization| %></h1>
+    <h1 class="home">Starred Repos: <%= @info.starred_repos.starred_repo_names.count %></h1>
+    <h1 class="home">Followers: <%= @info.followers.names.count %></h1>
+    <h1 class="home">Following: <%= @info.following.names.count %></h1>
+    <h1 class="home">Total Contributions: <%= @info.doc.total_contributions %></h1>
+    <h1 class="home">Longest Streak: <%= @info.doc.longest_streak %></h1>
+    <h1 class="home">Current Streak: <%= @info.doc.current_streak %></h1>
+    <h1 class="home">Your Organizations: <% @info.organizations.names.each do |organization| %></h1>
     <h1 class="home">
       <ul>
         <li> <%=  organization%></li>
       </ul>
     </h1>
     <% end %>
-    <h1 class="home">Repos: <% @starred_repos.names.each do  |name|  %></h1>
+    <h1 class="home">Repos: <% @info.starred_repos.names.each do  |name|  %></h1>
     <h1 class="home">
       <ul>
         <li> <%= link_to name, commits_path(name)%></li>

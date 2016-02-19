@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 19 Feb 2016 00:07:46 GMT
+      - Fri, 19 Feb 2016 00:07:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,7 +31,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4947'
+      - '4955'
       X-Ratelimit-Reset:
       - '1455843696'
       Cache-Control:
@@ -67,12 +67,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 2d7a5e35115884240089368322196939
+      - cee4c0729c8e9147e7abcb45b9d69689
       X-Github-Request-Id:
-      - 3F910F62:A4EC:181DA158:56C65CD2
+      - 3F910F62:A4E9:11D15B0F:56C65CCC
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"team-slota","id":17324366,"url":"https://api.github.com/orgs/team-slota","repos_url":"https://api.github.com/orgs/team-slota/repos","events_url":"https://api.github.com/orgs/team-slota/events","hooks_url":"https://api.github.com/orgs/team-slota/hooks","issues_url":"https://api.github.com/orgs/team-slota/issues","members_url":"https://api.github.com/orgs/team-slota/members{/member}","public_members_url":"https://api.github.com/orgs/team-slota/public_members{/member}","avatar_url":"https://avatars.githubusercontent.com/u/17324366?v=3","description":null}]'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 00:07:46 GMT
+  recorded_at: Fri, 19 Feb 2016 00:07:41 GMT
 recorded_with: VCR 3.0.1

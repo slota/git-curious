@@ -21,29 +21,25 @@ class ActiveSupport::TestCase
 
 end
 
-
-
-
 class ActionDispatch::IntegrationTest
-  OmniAuth.config.test_mode = true
-  omniauth_hash = { 'provider' => 'github',
-    'uid' => '12905774',
-    'info' => {
-      'name' => 'John Slota',
-      'email' => 'john.slota@gmail.com',
-      'nickname' => 'slotaj'
-    },
+  def stub_omniauth
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({'provider' => 'github',
+      'uid' => '12905774',
+      'info' => {
+        'name' => 'jesus',
+        'email' => 'john.slota@gmail.com',
+        'nickname' => 'carmer'
+      },
+      'credentials' => {
+        'token' => 12312
+        }})
+  end
 
 
-  }
+  include Capybara::DSL
 
-  OmniAuth.config.add_mock(:github, omniauth_hash)
-
-  class IntegrationTest
-    include Capybara::DSL
-
-    def teardown
-      reset_session!
-    end
+  def teardown
+    reset_session!
   end
 end

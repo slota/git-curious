@@ -10,6 +10,6 @@ class OrganizationTest < ActiveSupport::TestCase
   end
   #
   test 'organization works correctly' do
-    assert_equal @organization.names.first, "jcasimir"
+    assert_equal @organization.names.first, "team-slota"
   end
 end

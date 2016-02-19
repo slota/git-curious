@@ -52,7 +52,7 @@ class GitHubServiceTest < ActiveSupport::TestCase
       organizations = current_service.organizations
 
       refute organizations.nil?
-      assert_equal organizations.count, 2
+      assert_equal organizations.count, 1
     end
   end
 
@@ -63,7 +63,7 @@ class GitHubServiceTest < ActiveSupport::TestCase
       commits = current_service.commits("git-curious")
 
       refute commits.nil?
-      assert_equal commits.count, 5
+      assert_equal commits.count, 7
     end
   end
 
