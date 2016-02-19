@@ -10,6 +10,6 @@ class CommitTest < ActiveSupport::TestCase
   end
 
   test 'commit works correctly' do
-    assert_equal @commit.comments.first, "all faraday endpoints being tested"
+    assert_equal @commit.comments.first, "all functionality"
   end
 end
