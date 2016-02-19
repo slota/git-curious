@@ -8,7 +8,8 @@ class NokogiriServiceTest < ActiveSupport::TestCase
       user = "slotaj"
       giri_service_object = NokogiriService.new(user)
       refute giri_service_object.nil?
-      assert_equal giri_service_object.name, "slotaj"
+      giri_service_object.doc.css("h1").text.split[0]
+      assert_equal giri_service_object.doc.css("h1").text.split[0], "John"
     end
   end
 end
