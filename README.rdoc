@@ -3,6 +3,8 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+the producton heroku site is https://blooming-garden-10554.herokuapp.com/
+
 Hola my name is john and this is a basic github functionality api,
 if you have questions/comments/concerns shoot me an email at john.slota@gmail.com
 Basically you can add currently a github nickname on the front and it'll put them on a scoreboard,
