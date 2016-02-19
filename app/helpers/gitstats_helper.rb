@@ -1,0 +1,2 @@
+module GitstatsHelper
+end

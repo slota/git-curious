@@ -143,6 +143,7 @@
         null,
         1,
         null,
+        1,
         null,
         null,
         null,
@@ -191,6 +192,15 @@
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/test/controllers/gitstats_controller_test.rb": [
+        1,
+        null,
+        1,
         null,
         null,
         null,
@@ -288,6 +298,15 @@
         null,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/test/models/gitstat_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
         null,
         null
       ],
@@ -437,6 +456,11 @@
         null,
         null
       ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/gitstat.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/user.rb": [
         1,
         1,
@@ -449,83 +473,6 @@
         0,
         0,
         null,
-        null,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/controllers/welcome_controller.rb": [
-        1,
-        1,
-        2,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        10,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/comments_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/sessions_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/users_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/welcome_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/controllers/sessions_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/welcome.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
         null
       ],
@@ -575,6 +522,65 @@
         null,
         null
       ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/following.rb": [
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        50,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/commit.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        7,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        8,
+        null,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/comment.rb": [
+        1,
+        1,
+        null,
+        1,
+        7,
+        7,
+        null,
+        null,
+        1,
+        7,
+        0,
+        null,
+        7,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/repo.rb": [
         1,
         1,
@@ -605,14 +611,86 @@
         null,
         null
       ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/following.rb": [
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/controllers/welcome_controller.rb": [
         1,
         1,
         2,
+        1,
+        null,
+        3,
+        null,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/controllers/application_controller.rb": [
+        1,
         null,
         null,
         1,
-        50,
+        1,
+        null,
+        1,
+        null,
+        1,
+        10,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/comments_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/gitstats_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/welcome.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -651,12 +729,29 @@
       "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/organization.rb": [
         1,
         1,
+        null,
         1,
         2,
+        2,
+        null,
         null,
         null,
         1,
         4,
+        null,
+        null
+      ],
+      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/organization_name.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
         null,
         null
       ],
@@ -676,27 +771,8 @@
         null,
         null,
         null
-      ],
-      "/Users/johnslota/code/ruby_rails/1510/git-curious/app/models/commit.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        8,
-        null,
-        null,
-        null,
-        null
       ]
     },
-    "timestamp": 1455861806
+    "timestamp": 1455911839
   }
 }

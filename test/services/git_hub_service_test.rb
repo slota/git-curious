@@ -49,7 +49,7 @@ class GitHubServiceTest < ActiveSupport::TestCase
     VCR.use_cassette('organizations_service') do
       user = users(:one)
       current_service = GitHubService.new(user)
-      organizations = current_service.organizations
+      organizations = current_service.organizations("slotaj")
 
       refute organizations.nil?
       assert_equal organizations.count, 1

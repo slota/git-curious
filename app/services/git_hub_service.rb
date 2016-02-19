@@ -23,8 +23,8 @@ class GitHubService
     JSON.parse(connection.get("/user/following", {access_token: current_user.token}).body)
   end
 
-  def organizations
-    JSON.parse(connection.get("/users/slotaj/orgs", {access_token: current_user.token}).body)
+  def organizations(nickname)
+    JSON.parse(connection.get("/users/#{nickname}/orgs", {access_token: current_user.token}).body)
   end
 
   def commits(repo)

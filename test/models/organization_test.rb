@@ -5,7 +5,7 @@ class OrganizationTest < ActiveSupport::TestCase
     VCR.use_cassette('organization_model') do
       user = users(:one)
       current_service = GitHubService.new(user)
-      @organization = Organization.new(current_service)
+      @organization = Organization.new(current_service, "slotaj")
     end
   end
   #

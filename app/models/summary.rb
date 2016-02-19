@@ -1,8 +1,8 @@
 class Summary
   attr_reader :doc
 
-  def initialize(current_user)
-    @doc = NokogiriService.new(current_user.nickname)
+  def initialize(nickname)
+    @doc = NokogiriService.new(nickname)
   end
 
   def total_contributions
